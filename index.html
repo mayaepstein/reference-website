@@ -5,111 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design 1 Reference Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <ul>
+        <li><a href="#nav">Skip to Navigation</a></li>
+        <li><a href="#main">Skip to Main</a></li>
+    </ul>
+
+    <header role="banner">
         <h1>Reference Website</h1>
-        <nav>
+        <nav role="navigation" id="nav">
             <ul>
-                <li><a href="#">Week 3: Naming Conventions & Commit Messages</a></li>
-                <li><a href="#">Week 4: Common HTML Tags</a></li>
-                <li><a href="#">Week 5: Structuring Content, Linking & Comments</a></li>
+                <li><a href="#week3">Week 3: Naming Conventions & Commit Messages</a></li>
+                <li><a href="#week4">Week 4: Common HTML Tags</a></li>
+                <li><a href="#week5">Week 5: Structuring Content, Linking & Comments</a></li>
+                <li><a href="#week6">Week 6: Accessibility</a></li>
+                <li><a href="#week7">Week 7: Relative Paths</a></li>
+                <li><a href="#week10">Week 10: Styling Text, Fonts & Links</a></li>
+                <li><a href="#week11">Week 11: Margin and Padding</a></li>
             </ul>
         </nav>
     </header>  
     
-    <main>
-        <section>
-            <h2>Week 3: Naming Conventions & Commit Messages</h2>
-
-            <h3>Rules for naming files and paths</h3>
-            <ul>
-                <li>All lowercase</li>
-                <li>No spaces</li>
-                <li>Only letters, numbers, and dashes (-)</li>
-                <!--example: this-is-my-reference-website-->
-            </ul>
+    <main role="main" id="main">
+        <section id="week3">
+                <h2>Week 3: Naming Conventions & Commit Messages</h2>
+            
+            <div>
+                <h3>Rules for naming files and paths</h3>
+                <ul>
+                    <li>All lowercase</li>
+                    <li>No spaces</li>
+                    <li>Only letters, numbers, and dashes (-)</li>
+                    <!--example: this-is-my-reference-website-->
+                </ul>
+            </div>
+        
+            <div>
+                <h3>Commit Messages</h3>
+                <p>Commit messages should be between 3-10 words. The should have proper grammar and spelling, a capital starting letter, and no periods. You should pretend that every commit starts with "This commit will..." and then add an imperative verb like create, fix, add, or solve. </p>
+                <!--example: add header and footer-->
+            </div>
+            
         </section>
 
-        <section>
-            <h3>Commit Messages</h3>
-            <p>Commit messages should be between 3-10 words. The should have proper grammar and spelling, a capital starting letter, and no periods. You should pretend that every commit starts with "This commit will..." and then add an imperative verb like create, fix, add, or solve. </p>
-            <!--example: add header and footer-->
-        </section>
-
-        <section>
+        <section id="week4">
             <h2>Week 4: Common HTML Tags</h2>
 
-            <h3>Headings</h3>
-            <p>h1-h6 tags mark headings by importance, with h1 being most important and h6 least important.</p>
-            <ul>
-                <li><h1>h1</h1></li>
-                <li><h2>h2</h2></li>
-                <li><h3>h3</h3></li>
-                <li><h4>h4</h4></li>
-                <li><h5>h5</h5></li>
-            </ul>
+            <div>
+                <h3>Headings</h3>
+                <p>h1-h6 tags mark headings by importance, with h1 being most important and h6 least important.</p>
+                <ul>
+                    <li><h1>h1</h1></li>
+                    <li><h2>h2</h2></li>
+                    <li><h3>h3</h3></li>
+                    <li><h4>h4</h4></li>
+                    <li><h5>h5</h5></li>
+                </ul>
+            </div>
 
-            <h3>Paragraphs</h3>
-            <p>p tags mark a paragraph, like this one! To start text on a new line, you have to put it in its own paragraph tag</p>
+            <div>
+                <h3>Paragraphs</h3>
+                <p>p tags mark a paragraph, like this one! To start text on a new line, you have to put it in its own paragraph tag</p>
+            </div>
 
-            <h3>Lists</h3>
-            <ul>
-                <li>This is an unordered list, made with a ul tag</li>
-                <li>It is used for list items that aren't in a specific order</li>
-                <li>Items in the list need to be in a li tag</li>
-            </ul>
+            <div>
+                <h3>Lists</h3>
+                <ul>
+                    <li>This is an unordered list, made with a ul tag</li>
+                    <li>It is used for list items that aren't in a specific order</li>
+                    <li>Items in the list need to be in a li tag</li>
+                </ul>
 
-            <ol>
-                <li>This is an ordered list, made with an ol tag</li>
-                <li>It is used for list items that need to be in a specific order</li>
-                <li>Items in the list need to be in a li tag</li>
-            </ol>
+                <ol>
+                    <li>This is an ordered list, made with an ol tag</li>
+                    <li>It is used for list items that need to be in a specific order</li>
+                    <li>Items in the list need to be in a li tag</li>
+                </ol>
+            </div>
 
-            <h3>Images</h3>
-            <img src="images/tulips.webp" alt="pink tulips on a pink background">
-            <p>This is how you link an image! Remember to add alt text.</p>
+            <div>
+                <h3 id="tulips">Images</h3>
+                <img src="images/tulips.webp" alt="pink tulips on a pink background">
+                <p>This is how you link an image! Remember to add alt text.</p>
                 <!--remember to start src with images/ to enter the images folder-->
+            </div>
 
-            <h3>Quotes, Citations, and Emphasis</h3>
-            <q>Use a q tag for quotes that are short.</q>
-            <blockquote>Use a blockquote tag for quotes that are longer.</blockquote>
-            <p>Use a cite tag for <cite>Titles</cite> you want to cite</p>
-            <p>Use an em tag to <em>emphasize</em> text.</p>
-            <p>Use a strong tag for text that's <strong>important.</strong></p>
-            <p>Use a b tag for text that you want to be <b>bold.</b></p>
-            <p>Use an i tag to make text <i>italic.</i></p>
-            <p>Use a small tag to make text <small>smaller</small></p>
-
-
+            <div>
+                <h3>Quotes, Citations, and Emphasis</h3>
+                <q>Use a q tag for quotes that are short.</q>
+                <blockquote>Use a blockquote tag for quotes that are longer.</blockquote>
+                <p>Use a cite tag for <cite>Titles</cite> you want to cite</p>
+                <p>Use an em tag to <em>emphasize</em> text.</p>
+                <p>Use a strong tag for text that's <strong>important.</strong></p>
+                <p>Use a b tag for text that you want to be <b>bold.</b></p>
+                <p>Use an i tag to make text <i>italic.</i></p>
+                <p>Use a small tag to make text <small>smaller</small></p>
+            </div>
         </section>
 
-        <section>
+        <section id="week5">
             <h2>Week 5: Structuring Content, Linking & Comments</h2>
 
-            <h3>Structure Elements</h3>
+            <div>
+                <h3>Structure Elements</h3>
+                <p>The tags used to structure content are:</p>
+                <ul>
+                    <li>header - introductory content</li>
+                    <li>footer - appears at the bottom of a website</li>
+                    <li>main - for the main page content, can only be used once per page</li>
+                    <li>section - used to group related content</li>
+                    <li>article - for self contained elements on a page</li>
+                    <li>nav - contains navigation links</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Linking on the Same Page</h3>
+                <p>To link to an element on the same page, use an href tag and its class or id.</p>
+                <a href="#tulips">Like this! this links to the tulips.</a>
+            </div>
 
-            <h3>Linking on the Same Page</h3>
+            <div>
+                <h3>Comments</h3>
+                <p>Add a comment!</p>
+                <!--Like this!-->
+            </div>
+        </section>
 
-            <h3>Comments</h3>
-            <p>Add a comment!</p>
-            <!--Like this!-->
+        <section id="week6">
+            <h2>Week 6: Accessibility</h2>
+            <div>
+                <h3>Landmark Roles</h3>
+                <p>Landmark roles help people with screen readers jump to specific content. They include:</p>
+                <ul>
+                    <li>header role: banner</li>
+                    <li>nav role: navigation</li>
+                    <li>main role: main</li>
+                    <li>footer role: contentinfo</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Skip Links</h3>
+                <p>Put skip links at the top of your page to link to specific areas like nav or main content</p>
+            </div>
+
+            <div>
+                <h3>Aria-label</h3>
+                <p>use the aria-label to add more meaning to links. Like this, for example:</p>
+
+                <article>
+                   <h4></h4>
+                   <img src="images/beans.jpg" alt="" role="presentation"/>
+                   <p>Do you like beans? Here's a complete guide to different types of beans and what they can be used for.</p>
+                   <a href="" aria-label="Read more about bean types and uses">read more</a>
+                </article>
+            </div>
 
         </section>
 
-        <section>
-        <h2>Week 6: Accessibility</h2>
-
-        </section>
-
-        <section>
+        <section id="week7">
             <h2>Week 7: Relative Paths</h2>
+            
+        </section>
+
+        <section id="week10">
+            <h2>Week 10: Styling Text, Fonts & Links</h2>
+
+            <div class="property">
+                <h3>Font properties</h3>
+                <ul>
+                    <li>font-family: specifies font</li>
+                    <li>font-size: specifies font size</li>
+                    <li>font-weight: for setting a font's weight </li>
+                    <li>font-style: for setting italics</li>
+                    <li>line-height: specifies line height</li>
+                    <li>font shorthand: shorthand for style, weight, size, line height and family</li>
+                </ul>
+            </div>
+
+            <div class="decoration">
+                <h3>Text decorations</h3>
+                <ul>
+                    <li>text-transform: changes case, like lowercase or uppercase</li>
+                    <li>text-decoration: for lines, like underlines or overlines</li>
+                    <li>text-align: changes alignment, like right left or center</li>
+                    <li>text-indent: idents the first line of text</li>
+                    <li>text-shadow: for creating a drop shadow </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Links</h3>
+            </div>
+
+            <div>
+                <h3>Adding fonts</h3>
+            </div>
+            
+        </section>
+
+        <section id="week11">
+            <h2>Week 11: Margin and Padding</h2>
             
         </section>
     </main>
 
-    <footer>
-
+    <footer role="contentinfo">
+        <small>This is my footer!</small>
     </footer>
 </body>
 </html>
