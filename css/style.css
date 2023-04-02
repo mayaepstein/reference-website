@@ -65,4 +65,12 @@ a.link:hover, a.link:focus {
     background-color: darkcyan;
 }
 
+.box {
+    background-color: bisque;
+    padding: 1em;
+    margin: 1em 12em;
+}
 
+img {
+   width: 100%; 
+}
