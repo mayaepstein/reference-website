@@ -10,42 +10,59 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.property ul :nth-child(2){
+.property ul :nth-child(2) {
     font-size: 2rem;
 }
 
-.property ul :nth-child(3){
+.property ul :nth-child(3) {
     font-weight: bold;
 }
 
-.property ul :nth-child(4){
+.property ul :nth-child(4) {
     font-style: italic;
 }
 
-.property ul :nth-child(5){
+.property ul :nth-child(5) {
     line-height: 1.5;
 }
 
-.property ul :last-child{
+.property ul :last-child {
     font: italic 2rem Poppins, sans-serif;
 }
 
-.decoration ul :first-child{
+.decoration ul :first-child {
     text-transform: uppercase;
 }
 
-.decoration ul :nth-child(2){
+.decoration ul :nth-child(2) {
     text-decoration: overline;
 }
 
-.decoration ul :nth-child(3){
+.decoration ul :nth-child(3) {
     text-align: center;
 }
 
-.decoration ul :nth-child(4){
+.decoration ul :nth-child(4) {
     text-indent: 1em;
 }
 
-.decoration ul :last-child{
+.decoration ul :last-child {
     text-shadow: 1px 1px 1px palevioletred;
 }
+
+a.link:link {
+    color: darkcyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.link:visited {
+    color: black;
+}
+
+a.link:hover, a.link:focus {
+    color: white;
+    background-color: darkcyan;
+}
+
+
